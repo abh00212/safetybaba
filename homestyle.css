@@ -1,0 +1,683 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: 'open sans' sans-serif;
+    background:white;
+    color: grey;
+    line-height: 1.6em;
+    flex-shrink: 0;
+}
+#baba
+{ 
+    color: red;
+}
+.list-1
+{
+    list-style-type: none;
+}
+.list-1 a
+{
+    text-decoration: none;
+    color: white;
+}
+
+/* Navbar............................................................................................... */
+.navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0px;
+}
+.navbar h1 a
+{
+    color: white;
+    text-decoration: none;
+    padding-right: 45px;
+}
+.family
+{
+    color:black;
+    padding-right: 5px;
+}
+.navbar ul
+{
+    display: flex;
+}
+.navbar ul li
+{
+    width: 120px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 3px;
+}
+.active, .navbar ul li:hover
+{
+    background-color:#98EC0F;
+    border-radius: 3px;
+}
+
+
+/* About Sub-Menu.................................. All Sub menu can change from here.  */
+.about_sub
+{
+    display: none;
+}
+.navbar ul li:hover .about_sub
+{
+    display: block;
+    position: absolute;
+    background-color: green;
+    margin-top: 15px;
+}
+.navbar ul li:hover .about_sub ul
+{
+    display: block;
+    margin: 10px;
+}
+.navbar ul li:hover .about_sub ul li
+{
+    margin: 5px;
+    padding: 5px;
+    border-bottom: 1px dotted white;
+    text-align: left;
+}
+.navbar ul li:hover .about_sub ul li:last-child
+{
+    border-bottom: none;
+}
+.about_sub 
+{
+    color: white;
+}
+.about_sub ul
+{
+    list-style-type: none;
+    padding: 0 20px;
+}
+
+
+/* Section................................................................................... */
+/* Part-1 ......................*/
+#section
+{
+    width: 100%;
+    height: 500px;
+    background-color:#82E0AA;
+}
+#section .section
+{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 55%;
+    line-height: 1.2;
+    margin-bottom: 0;
+}
+.section h1
+{
+    color: red;
+    font-weight: 700;
+    font-size: 45px
+}
+.section p
+{
+    color:black;
+    font-size: 20px;
+}
+
+/* Part-2................*/
+
+.content
+{
+    width: 19.5%;
+    height: 220px;
+    border: 1px solid black;
+    background-color: #33F1FF;
+    color: black;
+    text-align: center;
+    border-radius: 5px;
+    overflow: auto;
+}
+.content ul li
+{
+    line-height: 1.2;
+}
+.content a
+{
+    color: black;
+}
+.content a:hover
+{
+    color: yellow;
+}
+#section_part2
+{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.content .btn
+{
+    display:inline-block;
+    padding: 5px 0;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;    
+}
+.content .btn a
+{
+    text-decoration: none;
+    color: black;
+}
+.content .btn a:hover
+{
+    color: yellow;
+}
+.content ul li
+{
+    text-align: left;
+    padding: 5px;
+    margin-left: 5px;
+    color: #14155a;
+}
+.list-2
+{
+    list-style-type: lower-alpha;
+    list-style-position: inside;
+}
+/* Section_part3 starts here the search box we will create here. ......................................... */
+.section_part3
+{
+    background-color: #FFC0CB	;
+    color: black;
+    width: 100%;
+    height: 200px;
+}
+.section_part3 h1
+{
+    text-align: center;
+    padding: 10px 0 15px 0;
+}
+.section_part3 #short_form ul
+{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+}
+.section_part3 #short_form ul li
+{
+    text-decoration: none;
+    font-size: 20px;
+    background-color: gray;
+    width: 150px;
+    padding: 8px;
+    border-radius: 5px;
+    text-align: center;
+}
+.section_part3 #short_form ul li a
+{
+    text-decoration: none;
+    color: black;
+}
+.section_part3 #short_form ul li a:hover
+{
+    border-bottom: 3px solid yellow ;
+}
+#search_items
+{
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+#search_box
+{
+    width: 500px;
+    height: 50px;
+}
+#search_box:hover
+{
+    border: 2px solid green;
+}
+input
+{
+    width: 100px;
+    height: 50px;
+    margin-left: 10px;
+}
+input:hover
+{
+    background-color: white;
+    color: black;
+}
+/* Section_part4 About us starts here................................................... */
+#about_color
+{
+    background-color:blue;
+    width: 100%;
+    height: 100px;
+    color: white;
+}
+#about_color h1
+{
+    padding: 15px 0 10px 15px;
+    font-weight: 700;
+    font-size: 35px;
+}
+#about_color p
+{
+    padding: 0 0 0 10px;
+    font-size: 22px;
+    font-weight: 700;
+}
+#about_frame
+{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    align-content: center;
+    vertical-align: middle;
+}
+#about_image
+{
+    width: 50%;
+    height: 400px;
+    color: white;
+    padding: 25px 10px 0 15px;
+}
+#about_us
+{
+    width: 50%;
+    height: 400px;
+    background-color: yellowgreen;
+    color: black;
+    list-style-position: inside;
+    padding: 25px 10px 0 15px;
+}
+#about_us h1
+{
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 35px;
+}
+#section_founder
+{
+    background-color: cornsilk;
+}
+#founder
+{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 350px;
+}
+#founder_pic
+{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    padding-top: 8px;   
+}
+#founder p
+{
+    color: black;
+}
+#founder p a
+{
+    text-decoration: none;
+    color: green;
+}
+#founder p a:hover
+{
+    border-bottom: 2px solid red;
+}
+#founder p a:active
+{
+    background-color: #8C0FEC;
+}
+
+
+#service_page
+{
+    background-color: gainsboro;
+    color: black;
+    height: 400px;
+    width: 100%;
+}
+#service_page i
+{
+    color: blue;
+}
+#service_page h1
+{
+    padding: 20px 0 0 10px;
+    color: blue;
+    font-size: 35px;
+    font-weight: 700;
+}
+#service
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+#service1
+{
+    line-height: 2.5;
+    padding-right: 30px;
+}
+#service2
+{
+    line-height: 2.5;
+    padding-right: 30px;
+}
+#service3
+{
+    height: 300px;
+    width: 300px;
+    padding-right: 10px;
+    border: 2px solid white;
+    background-color: grey;
+    color: white;
+}
+#service3 h1
+{
+    padding-bottom: 10px;
+    color: blue;
+}
+#service3 p
+{
+    padding-left: 10px;
+    line-height: 1.8;
+}
+/* Section part5 starts here, resources page is starts from here */
+#part5-head
+{
+    background-color: #0FECBD;
+    color: black;
+}
+#part5_heading
+{
+    padding: 40px 15px;
+    background-color: blue;
+    height: 120px;
+    width: 100%;
+    color: white;
+    font-size: 35px;
+    font-weight: 700;
+
+}
+#part5_text
+{
+    height: 800px;
+    padding: 20px 20px;
+}
+#part5_text h4
+{
+    padding: 10px 0;
+    color: blue;
+    font-weight: 700;
+    font-size: 22px;
+}
+#part5_text p
+{
+    line-height: 1.5;
+    font-size: 20px;
+    font-weight: 500;
+}
+#part5_text i
+{
+    color: blue;
+}
+#part6-head
+{
+    display: grid;
+    grid-template-columns: repeat(5 , 1fr);
+    grid-gap: 1px;
+    text-align: center;
+    justify-content: center;
+    height: 300px;
+    margin: 5px;
+    
+}
+.a
+{
+    background-color: black;
+    color: white;
+    
+}
+.a h3
+{
+    color: yellow;
+    font-size: bold;
+    font-weight: 700;
+}
+
+
+
+#follow
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    
+    height: 150px;
+    width: 100%;
+    background-color: #4424A9;
+}
+#h1 a
+{
+    color: white;
+    text-decoration: none;
+}
+#subs
+{
+    width: 300px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+#h1 a:hover
+{
+    color: black;
+}
+#buttn1
+{
+     padding: 15px 50px;
+     margin: 0 auto;
+     background-color: red;
+     color: white;
+     cursor: pointer;
+     border-radius: 5px;
+}
+#buttn1:hover
+{
+    color: black;
+}
+#align
+{
+    align-content: center;
+    align-items:center ;
+    text-align: center;
+}
+.clear
+{
+    clear: both;
+}
+#social
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+#social i
+{
+    padding: 0 20px;
+    color: white;
+}
+#social i:hover
+{
+    color: black;
+}
+#footer2
+{
+    background-color: rgba(240, 241, 241, 0.986);
+    height: 150px;
+    width: 100%;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-gap: 1px;
+    border: 01 dotted black;
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
+    align-self: left;
+    color: black;
+    background-color: cornsilk;
+}
+#footer2 #st1 
+{
+    text-align: left;
+}
+#rd3
+{
+    text-align: left;
+}
+
+
+
+#footer3
+{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    color: white;
+    padding-top: 10px;
+    background-color: #1F2128;
+    margin-bottom: 10px;
+}
+#footer3 li
+{
+    line-height: 2.0;
+}
+#footer3 a
+{
+    color: white;
+    
+}
+#footer3 i
+{
+    color: yellow;
+}
+#footer3 h3
+{
+    color: white;
+    padding-bottom: 10px;
+}
+#abhi li
+{
+    line-height: 2.0;
+}
+#abhi1 p
+{
+    line-height: 2.0;
+}
+#abhi2 li
+{
+    line-height: 2.0;
+}
+.copy
+{
+    height: 100px;
+    margin-bottom: 100px;
+    color: white;
+    background-color: green;
+}
+.copy p
+{
+    text-align: center;
+    font-size: 18px;
+}
+
+
+
+#contact_form label
+{
+    display: block;
+}
+#contact_form ul
+{
+    list-style-type: none;
+    list-style-position: inside;
+}
+#contact_form h1
+{
+    color: black;
+}
+.red
+{
+    color: red;
+}
+.all
+{
+    width: 90%;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 01px solid black;
+}
+#ms
+{
+    width: 90%;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 01px solid black;
+}
+#ms:hover
+{
+    border: 1px solid yellow;
+}
+.all:hover
+{
+    border: 1px solid yellow;
+}
+#sub
+{
+    display: block;
+    margin: 10px auto ;
+    width: 200px;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#sub:hover
+{
+    color: black;
+}
